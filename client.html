@@ -9,7 +9,7 @@
         // Create a socket connection to the servers socket.io module
 		var socketio = io.connect("127.0.0.1:1337");
 
-		// The client react when the server sends us messages
+		// The client react ()display the chat message) when the server sends us messages
 		socketio.on("message_to_client", function(data) {
 		    document.getElementById("divChatlog").innerHTML = ("<hr/>" +
     			        data['message'] + document.getElementById("divChatlog").innerHTML);
